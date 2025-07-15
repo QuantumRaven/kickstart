@@ -40,8 +40,8 @@ part swap --fstype="swap" --size=4096
 %include /tmp/password.ks
 
 %pre --interpreter=/bin/bash
-wget https://gist.githubusercontent.com/QuantumRaven/bd99bf83a29e7ae24f8b097d06d5b43c/raw/fa9c57ff0e001c08d9ca60bee6906902ded757b9/pre.cfg -O /tmp/pre.cfg
-wget https://gist.githubusercontent.com/QuantumRaven/ae6340a52c0967ab539aafc28f652e36/raw/83b2917f20af771895560f12a36ec8a93aa593dd/packages.cfg -O /tmp/packages.cfg
+wget https://quantumcrow.dev/pre.cfg -O /tmp/pre.cfg
+wget https://quantumcrow.dev/packages.cfg -O /tmp/packages.cfg
 /bin/bash /tmp/pre.cfg
 %end
 %packages
